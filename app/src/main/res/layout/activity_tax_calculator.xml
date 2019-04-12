@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaxCalculator"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/taxAppBar"
+        layout="@layout/main_app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etBasicSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:hint="Enter Basic Salary"
+                android:inputType="number"
+                android:backgroundTint="@color/colorAccent"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etHRA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:hint="Enter HRA"
+            android:backgroundTint="@color/colorAccent"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Enter TA"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etChildEdu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Child's Educational Allowance"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etMedical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Medical Allowance"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Other Allowance"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTotalExm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Enter Total Exemptions"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTotalInvest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Total Investments (If Any)"
+            android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/etTotalInvest"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttondelstyle"
+            android:text="Calculate"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtAnnual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCalculate"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Total Annual Tax is: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAnnualTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtAnnual"
+            android:layout_toEndOf="@+id/txtAnnual"
+            android:layout_marginLeft="20dp"
+            android:text="Annual Tax"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Tax is : "
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvMonthlyTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly tax"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

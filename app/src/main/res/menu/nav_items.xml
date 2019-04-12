@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/list_incomes"
+        android:title="List Of Incomes"
+        android:icon="@mipmap/ic_list_income"/>
+    <item
+        android:id="@+id/list_expense"
+        android:title="List Of Expenses"
+        android:icon="@mipmap/ic_list_expense"/>
+    <item
+        android:id="@+id/list_transfers"
+        android:title="List Of Transfers"
+        android:icon="@mipmap/ic_list_transfer"/>
+    <item
+        android:id="@+id/list_all"
+        android:title="All"
+        android:icon="@drawable/ic_list_black_24dp"/>
+</menu>

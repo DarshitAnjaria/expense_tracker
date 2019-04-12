@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartSuggestionActivity">
+
+    <include
+        layout="@layout/main_app_bar"
+        android:id="@+id/smart_suggestion_app_bar"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="143dp"
+        android:text="Total Income of the Month: "
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvTotalIncomeSmart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="sans-serif"
+        android:text="Total Income"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="181dp"
+        android:fontFamily="sans-serif"
+        android:text="Total Expense of the Month: "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvTotalExpenseSmart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvTotalIncomeSmart"
+        android:layout_alignTop="@+id/textView1"
+        android:fontFamily="sans-serif"
+        android:text="Total Expense"
+        android:textSize="15sp" />
+
+</RelativeLayout>

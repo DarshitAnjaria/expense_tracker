@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/optSavings"
+        android:title="Savings"/>
+
+    <item
+        android:id="@+id/optShowTotal"
+        android:title="Show Totals"/>
+
+    <item
+        android:id="@+id/optShowTaxCalcee"
+        android:title="Tax Calculator"/>
+
+</menu>

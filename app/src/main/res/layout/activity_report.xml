@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportActivity">
+
+    <include
+        android:id="@+id/reportToolbar"
+        layout="@layout/main_app_bar"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/income_report_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/expense_report_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="138dp" />
+
+    <TextView
+        android:id="@+id/noReport"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="326dp"
+        android:gravity="center_horizontal"
+        android:text="No Report Yet"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

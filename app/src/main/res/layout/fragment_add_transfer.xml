@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddTransferFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#FFCA28"
+            android:elevation="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transfers"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvTransferTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rs."
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="555dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="2dp"
+            android:elevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Transfer"
+            android:background="@drawable/edittextstyle"
+            android:padding="15dp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/materialSpinnerTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:ms_background_color="@android:color/white"
+            app:ms_hint="Select Category"
+            app:ms_text_color="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/etFromAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From Account"
+            android:drawableLeft="@drawable/ic_action_transfer"
+            android:drawablePadding="5dp"
+            android:inputType="text"
+            android:background="@drawable/edittextstyle"
+            android:padding="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/etToAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To Account"
+            android:inputType="text"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_action_transfer"
+            android:background="@drawable/edittextstyle"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/etEnterAmountTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Amount"
+            android:drawableLeft="@drawable/ic_action_amount"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:background="@drawable/edittextstyle"
+            android:padding="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/etSelectDateTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_action_date"
+            android:drawablePadding="5dp"
+            android:background="@drawable/edittextstyle"
+            android:padding="8dp"
+            android:text="Select Transfer Date"/>
+
+        <EditText
+            android:id="@+id/etEnterRemarkTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Remark(Optional)"
+            android:drawableLeft="@drawable/ic_action_remark"
+            android:drawablePadding="5dp"
+            android:inputType="text"
+            android:background="@drawable/edittextstyle"
+            android:padding="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/btnAddTransfer"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:background="@drawable/buttonaddstyle"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

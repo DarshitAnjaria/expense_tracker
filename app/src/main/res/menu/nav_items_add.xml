@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_income"
+        android:title="Add Income"
+        android:icon="@mipmap/ic_list_income"/>
+    <item
+        android:id="@+id/add_expense"
+        android:title="Add Expense"
+        android:icon="@mipmap/ic_list_expense"/>
+    <item
+        android:id="@+id/add_transfer"
+        android:title="Add Transfer"
+        android:icon="@mipmap/ic_list_transfer"/>
+</menu>

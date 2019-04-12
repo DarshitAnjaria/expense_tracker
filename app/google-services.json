@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "477639123671",
+    "firebase_url": "https://expensetracker-be225.firebaseio.com",
+    "project_id": "expensetracker-be225",
+    "storage_bucket": "expensetracker-be225.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477639123671:android:8c6f0179579a639d",
+        "android_client_info": {
+          "package_name": "com.example.asus.expensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477639123671-dlcejtm7r5tr7ejjk2emg7vri0dq72uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.expensetracker",
+            "certificate_hash": "d788bdf25c6daf8d9c54a144f450cf02e93ce57f"
+          }
+        },
+        {
+          "client_id": "477639123671-rev7cpircg3vk863ij7abrboi3iis2ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX8R419H_zEskiHiqhr3cy4Lax6Sp6sGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477639123671-rev7cpircg3vk863ij7abrboi3iis2ft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
